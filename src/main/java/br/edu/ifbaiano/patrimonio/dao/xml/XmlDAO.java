@@ -8,6 +8,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Calendar;
 
+import br.edu.ifbaiano.patrimonio.entity.Bem;
+import br.edu.ifbaiano.patrimonio.entity.Categoria;
+import br.edu.ifbaiano.patrimonio.entity.Sala;
 import br.edu.ifbaiano.patrimonio.entity.Setor;
 
 import com.thoughtworks.xstream.XStream;
@@ -31,9 +34,10 @@ public class XmlDAO {
 
     private void configuraXStream() {
 	xml = new XStream();
-	// xml.alias("servidor", Servidor.class);
+	xml.alias("Bem", Bem.class);
+	xml.alias("Categoria", Categoria.class);
+	xml.alias("Sala", Sala.class);
 	xml.alias("setor", Setor.class);
-	// xml.alias("ligacao", Ligacao.class);
 	xml.alias("database", instance.getClass());
 	// xml.registerConverter(new CalendarConverter());
 	// xml.registerConverter(new DateConverter());

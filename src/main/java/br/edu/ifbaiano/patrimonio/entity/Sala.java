@@ -7,6 +7,14 @@ public class Sala implements Serializable {
     private String nome;
     private Localidade localidade;
 
+    public Sala() {
+    }
+
+    public Sala(String nome, Localidade localidade) {
+	this.nome = nome;
+	this.localidade = localidade;
+    }
+
     public String getNome() {
 	return nome;
     }

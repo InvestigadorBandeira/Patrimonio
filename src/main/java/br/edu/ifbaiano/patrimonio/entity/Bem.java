@@ -16,6 +16,24 @@ public class Bem implements Serializable {
     private String situacao;
     private String estadoConservacao;
 
+    public Bem() {
+    }
+
+    public Bem(String contaContabil, String tomboSiga, String tomboAntigo,
+	    Categoria categoria, String descricao, BigDecimal valor,
+	    Setor setor, Sala sala, String situacao, String estadoConservacao) {
+	this.contaContabil = contaContabil;
+	this.tomboSiga = tomboSiga;
+	this.tomboAntigo = tomboAntigo;
+	this.categoria = categoria;
+	this.descricao = descricao;
+	this.valor = valor;
+	this.setor = setor;
+	this.sala = sala;
+	this.situacao = situacao;
+	this.estadoConservacao = estadoConservacao;
+    }
+
     public String getContaContabil() {
 	return contaContabil;
     }

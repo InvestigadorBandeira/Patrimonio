@@ -8,6 +8,15 @@ public class Setor implements Serializable {
     private String nome;
     private String siga;
 
+    public Setor() {
+    }
+
+    public Setor(String sigla, String nome, String siga) {
+	this.sigla = sigla;
+	this.nome = nome;
+	this.siga = siga;
+    }
+
     public String getSigla() {
 	return sigla;
     }

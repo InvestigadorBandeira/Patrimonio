@@ -7,6 +7,14 @@ public class Categoria implements Serializable {
     private String nome;
     private Grupo grupo;
 
+    public Categoria() {
+    }
+
+    public Categoria(String nome, Grupo grupo) {
+	this.nome = nome;
+	this.grupo = grupo;
+    }
+
     public String getNome() {
 	return nome;
     }
